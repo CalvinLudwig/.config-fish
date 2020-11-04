@@ -18,13 +18,13 @@ function fish_prompt
         set status_indicator "$normal❯$cyan❯$green❯"
     else
         set initial_indicator "$red✖ $last_status"
-        set status_indicator "$red❯$red❯$red❯"
+        set status_indicator "$yellow❯$yellow❯$red❯"
     end
     set -l cwd $cyan(basename (prompt_pwd))
 
     if [ (_git_branch_name) ]
 
-        if test (_git_branch_name) = 'master'
+        if test (_git_branch_name) = 'master' || test (_git_branch_name) = 'main'
             set -l git_branch (_git_branch_name)
             set git_info "$normal git:($red$git_branch$normal)"
         else
