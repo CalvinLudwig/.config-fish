@@ -100,3 +100,11 @@ end
 
 bind ! __history_previous_command
 bind '$' __history_previous_command_arguments
+
+function sorry
+    eval command sudo $history[1]
+end
+
+function please
+    sudo $argv
+end
