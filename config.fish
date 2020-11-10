@@ -1,4 +1,6 @@
-set fish_greeting
+function fish_greeting
+    archey3
+end
 
 # name: sashimi
 function fish_prompt
@@ -14,7 +16,7 @@ function fish_prompt
     set -g whitespace ' '
 
     if test $last_status = 0
-        set initial_indicator "$green◆"
+        set initial_indicator "$green "
         set status_indicator "$normal❯$cyan❯$green❯"
     else
         set initial_indicator "$red✖ $last_status"
@@ -107,4 +109,8 @@ end
 
 function please
     sudo $argv
+end
+
+function pac
+    sudo pacman $argv
 end
