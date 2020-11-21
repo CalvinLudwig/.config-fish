@@ -1,5 +1,6 @@
 function fish_greeting
-    archey3
+    neofetch
+    sh ~/Documents/scripts/colors.sh
 end
 
 # name: sashimi
@@ -113,4 +114,8 @@ end
 
 function pac
     sudo pacman $argv
+end
+
+function clock
+    tty-clock -c -C 3
 end
