@@ -119,3 +119,7 @@ end
 function clock
     tty-clock -c -C 3
 end
+
+function vimcfg
+    nvim ~/.config/nvim/init.vim
+end
